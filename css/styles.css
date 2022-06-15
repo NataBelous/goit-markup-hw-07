@@ -17,6 +17,8 @@ body {
 	letter-spacing: 0.03em;
 }
 
+/* BEM */
+
 .container {
 	width: 1200px;
 	margin: 0 auto;
@@ -28,14 +30,130 @@ body {
 	padding-bottom: 94px;
 }
 
-/* logotype */
+.header {
+	border-bottom: 1px solid #ececec;
+}
 
-.style-logo {
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.nav__style-logo {
 	text-decoration: none;
 	margin-right: 95px;
 	padding-top: 24px;
 	padding-bottom: 25px;
 }
+
+.nav__style-web {
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--accent-color);
+}
+
+.nav__style-studio {
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--primary-black-color);
+}
+
+.list-link {
+	font-weight: 500;
+	line-height: 1.14;
+	display: flex;
+	padding-left: 0;
+}
+
+.list-link__marker {
+	margin-right: 50px;
+}
+
+.list-link__marker:last-child {
+	margin-right: 0;
+}
+
+.list-link__page {
+	color: var(--primary-text-color);
+	text-decoration: none;
+	letter-spacing: 0.02em;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	position: relative;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-link__page .list-link__active {
+	color: var(--accent-color);
+}
+
+.list-link__page:focus,
+.list-link__page:hover {
+	color: var(--accent-color);
+}
+
+.list-link__active::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 4px;
+	border-radius: 2px;
+	background-color: var(--accent-color);
+	position: absolute;
+	bottom: 0;
+
+	opacity: 1;
+}
+
+.contact {
+	margin-left: auto;
+	display: flex;
+	padding-left: 0;
+}
+
+.contact__list {
+	margin-right: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.contact__list:last-child {
+	margin-right: 0;
+}
+
+.contact__link {
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	line-height: 1.14;
+	color: var(--title-text-color);
+	text-decoration: none;
+	letter-spacing: 0.02em;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__link:focus,
+.contact__link:hover {
+	color: var(--accent-color);
+}
+
+.contact__icon {
+	margin-right: 10px;
+	--color4: currentColor;
+}
+
+
+
+
+/* logotype */
 
 .style-logo-footer {
 	text-decoration: none;
@@ -49,90 +167,6 @@ body {
 	font-size: 26px;
 	line-height: 1.19;
 	color: var(--primary-white-color);
-}
-
-.style-studio {
-	font-family: "Raleway";
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
-	color: var(--primary-black-color);
-}
-
-.style-web {
-	font-family: "Raleway";
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
-	color: var(--accent-color);
-}
-
-.header {
-	border-bottom: 1px solid #ececec;
-}
-
-/* list-link*/
-
-.list-link.active {
-	color: var(--accent-color);
-}
-
-.list-link-nav {
-	margin-right: 50px;
-	display: flex;
-	align-items: center;
-}
-
-.list-link-nav:last-child {
-	margin-right: 0;
-}
-
-.list-nav {
-	margin-right: 50px;
-}
-
-.list-nav:last-child {
-	margin-right: 0;
-}
-
-.list-link:focus,
-.list-link:hover {
-	color: var(--accent-color);
-}
-
-.list-link {
-	color: var(--primary-text-color);
-	text-decoration: none;
-	letter-spacing: 0.02em;
-	padding-top: 32px;
-	padding-bottom: 32px;
-
-	position: relative;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.active::after {
-	content: "";
-	display: block;
-	width: 100%;
-	height: 4px;
-	border-radius: 2px;
-	background-color: var(--accent-color);
-	position: absolute;
-	bottom: 0;
-
-	opacity: 1;
-}
-
-.container-nav {
-	display: flex;
-	align-items: center;
-}
-
-.list-contact-nav {
-	margin-left: auto;
-	display: flex;
-	padding-left: 0;
 }
 
 /* button */
@@ -174,34 +208,6 @@ body {
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	padding: 8px 32px;
 	border: none;
-}
-
-/* list contact */
-
-.list-text-nav {
-	font-weight: 500;
-	line-height: 1.14;
-	display: flex;
-	padding-left: 0;
-}
-
-.list-contact:focus,
-.list-contact:hover {
-	color: var(--accent-color);
-}
-
-.list-contact {
-	display: flex;
-	align-items: center;
-	font-weight: 500;
-	line-height: 1.14;
-	color: var(--title-text-color);
-	text-decoration: none;
-	letter-spacing: 0.02em;
-	padding-top: 32px;
-	padding-bottom: 32px;
-
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer */
@@ -477,10 +483,7 @@ ul {
 
 /* ICONS-social*/
 
-.contact-icon {
-	margin-right: 10px;
-	--color4: currentColor;
-}
+
 
 .div-specifics {
 	height: 120px;
