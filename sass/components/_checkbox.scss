@@ -1,0 +1,27 @@
+.checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.checkbox__text {
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/checkbox.svg);
+}
+
+.checkbox__input:checked+.checkbox__text {
+  background-color: $accent-color;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../images/checkbox-checked.svg);
+}
+
+.checkbox {
+  position: relative;
+  padding-left: 21px;
+}

@@ -1,0 +1,40 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__list {
+  margin-right: 30px;
+}
+
+.logo__list:last-child {
+  margin-right: 0;
+}
+
+.logo__link {
+  color: $social-color;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $social-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+      color: $accent-color;
+      border-color: $accent-color;
+    }
+  
+  &:focus {
+      color: $accent-color;
+      border-color: $accent-color;
+    }
+}
+
+.logo__link>svg {
+  --color1: currentColor;
+}
