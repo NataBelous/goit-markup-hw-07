@@ -14,32 +14,33 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   padding: 40px;
-}
 
-.modal__button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
+  &__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
 
-  padding: 0;
-  border: none;
-  background: url(../images/icon-close.svg);
-  cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
+    border: none;
+    background: url(../images/icon-close.svg);
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    background: url(../images/icon-close2.svg);
+    &:hover {
+      background: url(../images/icon-close2.svg);
+    }
+  }
+  &__paragraph {
+    width: auto;
+    margin: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    color: $text-color;
   }
 }
 
-.modal__paragraph {
-  width: auto;
-  margin: 12px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  color: $text-color;
-}
