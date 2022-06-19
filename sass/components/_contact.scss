@@ -7,11 +7,12 @@
     margin-right: 50px;
     display: flex;
     align-items: center;
-  }
-  &__list:last-child {
-    margin-right: 0;
-  }
 
+    &:last-child {
+        margin-right: 0;
+    }
+  }
+  
   &__link {
     display: flex;
     align-items: center;
