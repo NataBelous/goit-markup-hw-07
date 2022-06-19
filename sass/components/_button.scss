@@ -3,14 +3,13 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
-}
 
-.button-list>li:last-child {
-  margin-right: 0;
-}
-
-.button-list>li {
+  &>li:last-child {
+    margin-right: 0;
+  }
+  &>li {
   margin-right: 8px;
+  }
 }
 
 .button-list__link {
