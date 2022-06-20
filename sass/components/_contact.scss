@@ -9,10 +9,10 @@
     align-items: center;
 
     &:last-child {
-        margin-right: 0;
+      margin-right: 0;
     }
   }
-  
+
   &__link {
     display: flex;
     align-items: center;
@@ -28,9 +28,10 @@
 
     &:focus,
     &:hover {
-        color: $accent-color;
-    } 
+      color: $accent-color;
+    }
   }
+
   &__icon {
     margin-right: 10px;
     --color4: currentColor;

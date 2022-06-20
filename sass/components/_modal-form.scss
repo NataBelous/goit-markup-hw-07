@@ -17,6 +17,10 @@
       resize: none;
       outline: none;
     }
+
+    &:focus+.modal-form__icon {
+      fill: $accent-color;
+    }
   }
 
   &__icon {
@@ -79,14 +83,13 @@
   }
 }
 
-.modal-form__input:focus+.modal-form__icon {
-  fill: $accent-color;
-}
+
 
 .modal-link__policy {
-  &:hover{
+  &:hover {
     color: $accent-color;
   }
+
   &:focus {
     color: $accent-color;
   }

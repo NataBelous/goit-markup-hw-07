@@ -4,21 +4,21 @@
   padding-bottom: 60px;
 
   &__container {
-      display: flex;
-      align-items: baseline;
+    display: flex;
+    align-items: baseline;
   }
-  
+
   &__address {
-      width: 230px;
-      margin-right: 70px;
+    width: 230px;
+    margin-right: 70px;
   }
-  
+
   &__logo {
     text-decoration: none;
     display: block;
     margin-bottom: 20px;
   }
-  
+
   &__style-web {
     font-family: "Raleway";
     font-weight: 700;
@@ -41,7 +41,7 @@
     text-decoration: none;
     font-style: normal;
   }
-  
+
   &__mail {
     display: block;
     margin-bottom: 9px;
@@ -57,7 +57,7 @@
   &__icon {
     --color1: currentColor;
   }
-  
+
   &__link {
     display: flex;
     width: 44px;
@@ -75,7 +75,7 @@
       background-color: $accent-color;
     }
   }
-  
+
   &__social {
     color: $white-color;
     font-weight: 700;
@@ -98,7 +98,7 @@
       margin-right: 0;
     }
   }
-  
+
   &__subscribe {
     display: block;
 
