@@ -1,7 +1,7 @@
 .modal-form {
   position: relative;
   display: block;
-  margin: 10px;
+  margin-bottom: 10px;
 
   &__input {
     width: 448px;
@@ -53,12 +53,15 @@
 
   &__label {
     margin-bottom: 4px;
+    padding-left: 5px;
+    
     font-size: 12px;
     line-height: 1.166;
     letter-spacing: 0.01em;
     color: $title-color;
     display: block;
     text-align: left;
+    
   }
 
   &__button {
@@ -84,6 +87,8 @@
 }
 
 .modal-link__policy {
+  color: $accent-color;
+
   &:hover {
     color: $accent-color;
   }
